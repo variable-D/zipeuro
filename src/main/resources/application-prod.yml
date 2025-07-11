@@ -1,0 +1,15 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    username: root
+    password: '0000'
+    url: jdbc:mysql://localhost:3306/eSIM
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
